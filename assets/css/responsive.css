@@ -1,93 +1,142 @@
-/* Mobile */
-@media (max-width: 46.1875em){
-    #nav {
-        display: block;
-    }
-    #nav >li {
-        display:block;
-        /* để block như này nó đã ghi đè cái thằng inline-block rồi 
-        nên những thằng home nó đã theo hàng dọc  */
-    }
-    #nav > li:first-child{
-        display: inline-block;
-    }
-    #nav .subnav {
-
-        position: initial;
-        background-color: #333;  
-
-  }
-  #nav .subnav a{
-      color: #fff;
-      padding: 5px 45px;
-  }
-  #nav li a{
-      padding: 1px 24px;
-  }
-    #header .mobile-menu-btn{
-        display: block;
-    }
-    #header .search-btn{
+/* tren mobile. tablet */
+@media (max-width: 64em) {
+    /* mobile tablet */
+    .hide-on-mobile-tablet {
         display: none;
     }
-    #header{
-        overflow: hidden;
-    }
-   
-    #content .member-img {
-        width: 60%;
 
-    }
-    .s-full-width,
-    .s-col-full{
-        width: 100% !important;
-
-    }
-    .contact-form{
-        margin-top: 32px;
-        line-height: 2;
-    }
-    .s-mt-8{
-        margin-top: 8px;
+    :root {
+        --header-height: 69px;
     }
 
-}
-/* Tablet && Mobile  */
+    .header {
+        background-color: var(--primary-color) !important;
+        top: 0;
+        
 
-@media (max-width :63.9375em){
-    .btn{
-        padding: 15px 16px;
     }
+    .header-navbar__mobile-menu{
+        display: block;
+    }
+    /* khi bấm vào menu thì hiện ra */
+    .header-navbar__mobile-menu-btn:checked ~ .header-navbar__mobile-menu-modal{
+        display: block;
+
+    }
+    .header-navbar__item-mobile-img{
+        display: block;
+    }
+    .header-navbar__mobile-login{
+        display: block;
+    }
+    .header-navbar__mobile-login-checkbox:checked ~ .header-navbar__mobile-modal{
+        display: flex;
+    }
+    .header-subnav__mobile-checkbox:checked ~ .header-subnav__mobile-wrap{
+        display: block;
+    }
+    .header-s-subnav__mobile-menu:checked ~ .header-s-subnav__mobile-wrap{
+        display: block;
+    }
+    .slider__img{
+        margin-top: var(--header-height);
+    }
+    .slider__text-sub-heading{
+        font-size: 8.2rem;
+        line-height: 8.2rem;
+    }
+    .slider__text-desc{
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        padding: 0 100px;
+        /* để cho chữ 2 bên nó dài ra 1 tí */
+    }
+
+
+
+
+
+
     
-    .contact-form .form-control{
-        padding: 15px;
-        font-size: 16px;
-        /* cũng cho rộng ta  */
-    }
-    #footer .socials-list{
-        font-size: 45px;
+    
 
-        /* ta sửa cho khoảng cách giữa các icon nó rộng ra và dễ nhìn 
-         */
-    }
-    #footer .socials-list a{
-        margin: 0 8px ;
-    }
-    #footer .copyright a{
-        padding: 12px 0 ;
-        display: inline-block;
-    }
-    #nav .subnav a{
-        padding: 5px 12px;
-    }
-    .contact-info{
-        line-height: 2;
-    } 
-    .contact-submit-btn{
-        font-size: 18px;
-    }
-   
+
 }
-@media (min-width:46.25em) and (max-width:63.9375em){
-      
+/* tablet  */
+@media (min-width:46.25em) and (max-width:64em){
+    .header-navbar{
+        padding: 0 80px;
+
+    }
+    .home-tour__item-heading-sub,.home-review__heading,.home-holiday__sub-heading,.home-resort__intro-sub-heading{
+        line-height: 5.2rem;
+        font-size: 5.2rem;
+    
+    }
+    .home-intro__item-clip{
+        width: 600px;
+        height: 290px;
+
+    }
+    .home-tour__item-desc,.home-holiday__desc,.home-resort__intro-desc {
+        width: 600px;
+        /* để thu nhỏ chữ lại */
+    }
+    .home-review__desc{
+        width: 70vh;
+
+    }
+ 
+}
+/* mobile */
+@media (max-width:46.1875em){
+    .slider__text-heading{
+        font-size: 3.4rem;
+        line-height: 3.4rem;
+    }
+    .slider__text-sub-heading{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+
+    }
+    .slider__text-desc {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        padding: 0;
+    }
+    .home-tour__item-heading-sub,
+    .home-review__heading,.home-holiday__sub-heading,.home-resort__intro-sub-heading{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+
+
+    }
+    .home-intro__item-clip {
+        width: 290px;
+        height: 140px;
+    }
+    .home-tour__item-desc{
+        width:290px ;
+    }
+    .home-review__desc,.home-holiday__desc,.home-resort__intro-desc{
+        width: 80vw;
+    }
+    .margin-top-50{
+        margin-top: 50px;
+    }
+    .header-navbar__mobile-list{
+        padding: 0 20px;
+    }
+
+    
+
+}
+/* phần pc */
+@media (min-width: 1200px){
+    .header{
+        background-color: var(--white-color);
+    }
+    .header-navbar__mobile-menu{
+        display: none;
+    }
 }
