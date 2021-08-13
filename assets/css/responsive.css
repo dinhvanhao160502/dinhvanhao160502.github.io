@@ -1,0 +1,142 @@
+/* tren mobile. tablet */
+@media (max-width: 64em) {
+    /* mobile tablet */
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    :root {
+        --header-height: 69px;
+    }
+
+    .header {
+        background-color: var(--primary-color) !important;
+        top: 0;
+        
+
+    }
+    .header-navbar__mobile-menu{
+        display: block;
+    }
+    /* khi bấm vào menu thì hiện ra */
+    .header-navbar__mobile-menu-btn:checked ~ .header-navbar__mobile-menu-modal{
+        display: block;
+
+    }
+    .header-navbar__item-mobile-img{
+        display: block;
+    }
+    .header-navbar__mobile-login{
+        display: block;
+    }
+    .header-navbar__mobile-login-checkbox:checked ~ .header-navbar__mobile-modal{
+        display: flex;
+    }
+    .header-subnav__mobile-checkbox:checked ~ .header-subnav__mobile-wrap{
+        display: block;
+    }
+    .header-s-subnav__mobile-menu:checked ~ .header-s-subnav__mobile-wrap{
+        display: block;
+    }
+    .slider__img{
+        margin-top: var(--header-height);
+    }
+    .slider__text-sub-heading{
+        font-size: 8.2rem;
+        line-height: 8.2rem;
+    }
+    .slider__text-desc{
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        padding: 0 100px;
+        /* để cho chữ 2 bên nó dài ra 1 tí */
+    }
+
+
+
+
+
+
+    
+    
+
+
+}
+/* tablet  */
+@media (min-width:46.25em) and (max-width:64em){
+    .header-navbar{
+        padding: 0 80px;
+
+    }
+    .home-tour__item-heading-sub,.home-review__heading,.home-holiday__sub-heading,.home-resort__intro-sub-heading{
+        line-height: 5.2rem;
+        font-size: 5.2rem;
+    
+    }
+    .home-intro__item-clip{
+        width: 600px;
+        height: 290px;
+
+    }
+    .home-tour__item-desc,.home-holiday__desc,.home-resort__intro-desc {
+        width: 600px;
+        /* để thu nhỏ chữ lại */
+    }
+    .home-review__desc{
+        width: 70vh;
+
+    }
+ 
+}
+/* mobile */
+@media (max-width:46.1875em){
+    .slider__text-heading{
+        font-size: 3.4rem;
+        line-height: 3.4rem;
+    }
+    .slider__text-sub-heading{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+
+    }
+    .slider__text-desc {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        padding: 0;
+    }
+    .home-tour__item-heading-sub,
+    .home-review__heading,.home-holiday__sub-heading,.home-resort__intro-sub-heading{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+
+
+    }
+    .home-intro__item-clip {
+        width: 290px;
+        height: 140px;
+    }
+    .home-tour__item-desc{
+        width:290px ;
+    }
+    .home-review__desc,.home-holiday__desc,.home-resort__intro-desc{
+        width: 80vw;
+    }
+    .margin-top-50{
+        margin-top: 50px;
+    }
+    .header-navbar__mobile-list{
+        padding: 0 20px;
+    }
+
+    
+
+}
+/* phần pc */
+@media (min-width: 1200px){
+    .header{
+        background-color: var(--white-color);
+    }
+    .header-navbar__mobile-menu{
+        display: none;
+    }
+}
